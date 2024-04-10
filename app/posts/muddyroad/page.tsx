@@ -1,0 +1,23 @@
+export default function Page() {
+  return (
+    <div className='py-12 max-w-prose flex flex-col gap-4'>
+      <blockquote className='font-light mb-8 border-l-4 pl-8 leading-7'>
+        Tanzan and Ekido were once traveling together down a muddy road. A heavy
+        rain was still falling. Coming around a bend, they met a lovely girl in
+        a silk kimono and sash, unable to cross the intersection. &quot;Come on,
+        girl,&quot; said Tanzan at once. Lifting her in his arms, he carried her
+        over the mud. Ekido did not speak again until that night when they
+        reached a lodging temple. Then he no longer could restrain himself.
+        &quot;We monks don&apos;t go near females,&quot; he told Tanzan,
+        &quot;especially not young and lovely ones. It is dangerous. Why did you
+        do that?&quot; &quot;I left the girl there,&quot; said Tanzan. &quot;Are
+        you still carrying her?&quot;
+      </blockquote>
+      <p>Koan 17 from the chapter &apos;101 Zen Stories&apos;</p>
+      <p className='text-sm text-foreground/80'>
+        Zen Flesh, Zen Bones; a collection of pre-Zen stories compiled by Paul
+        Reps
+      </p>
+    </div>
+  );
+}

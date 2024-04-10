@@ -1,20 +1,16 @@
 import Link from 'next/link';
+import Nav from './nav';
 
 export default function Header() {
   return (
     <div className='w-full'>
-      <nav className='max-w-6xl mx-auto flex justify-between items-center gap-8'>
-        <div className='py-2'>
-          <Link href='/' className='text-sm font-mono hover:underline'>
-            hirondelle
-          </Link>
-        </div>
-        <div className='py-2'>
-          <Link href='/' className='text-sm font-mono hover:underline'>
-            hirondelle
-          </Link>
-        </div>
-      </nav>
+      <div className='max-w-4xl mx-auto py-5 flex justify-between items-baseline gap-8'>
+        <Link href='/' className='text-lg hover:underline'>
+          Hirondelle
+        </Link>
+
+        <Nav />
+      </div>
     </div>
   );
 }
