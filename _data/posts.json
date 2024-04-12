@@ -1,59 +1,25 @@
 [
   {
     "date": "2024-04-10",
-    "name": "Grouping on X and Y in Observable Plot",
-    "external": "https://observablehq.com/d/5356fcd470ebc63f",
-    "category": "General",
-    "subcategory": "Code"
-  },
-  {
-    "date": "2024-04-04",
-    "name": "Binary Dates",
-    "link": "/posts/binarydates",
-    "category": "General"
+    "title": "Grouping on X and Y in Observable Plot",
+    "externalLink": "https://observablehq.com/d/5356fcd470ebc63f",
+    "category": "Code"
   },
   {
     "date": "2024-03-28",
-    "name": "Carbon Emissions for UK Travel",
-    "external": "https://observablehq.com/d/f08c08a29591b058",
+    "title": "Carbon Emissions for UK Travel",
+    "externalLink": "https://observablehq.com/d/f08c08a29591b058",
     "category": "Code"
   },
-
   {
     "date": "2024-03-22",
+    "title": "Vimes on economics",
     "quote": "The reason that the rich were so rich, Vimes reasoned, was because they managed to spend less money. Take boots, for example. He earned thirty-eight dollars a month plus allowances. A really good pair of leather boots cost fifty dollars. But an affordable pair of boots, which were sort of OK for a season or two and then leaked like hell when the cardboard gave out, cost about ten dollars. Those were the kind of boots Vimes always bought, and wore until the soles were so thin he could tell where he was in Ankh-Morpork on a foggy night by the feel of the cobbles. But the thing was that good boots lasted for years and years. A man who could afford fifty dollars had a pair of boots that'd still be keeping his feet dry in ten years' time, while a poor man who could only afford cheap boots would have spent a hundred dollars on boots in the same time and would still have wet feet. This was captain Samuel Vimes 'Boots' theory of socio-economic unfairness.",
     "attribution": "Terry Pratchett",
     "category": "Quotes"
   },
   {
-    "date": "2024-03-01",
-    "name": "Stob Bàn with Pin, traversing ridges",
-    "link": "/posts/stobbanwithpin",
-    "category": "Mountains",
-    "distance": 13.6,
-    "elevation": 963,
-    "duration": 415
-  },
-  {
-    "name": "Aonach Beag in glorious sunshine",
-    "link": "/posts/aonachbeagfeb24",
-    "date": "2024-02-24",
-    "category": "Mountains",
-    "distance": 14.5,
-    "elevation": 831,
-    "duration": 267
-  },
-  {
-    "name": "Number Four in the rain",
-    "link": "/posts/numberfourfeb24",
-    "date": "2024-02-19",
-    "category": "Mountains",
-    "distance": 19.9,
-    "elevation": 1173,
-    "duration": 482
-  },
-  {
-    "name": "Easy, Squeezy on Aonach Mor",
+    "title": "Easy, Squeezy on Aonach Mor",
     "date": "2024-02-18",
     "category": "Mountains",
     "distance": 10.9,
@@ -61,7 +27,7 @@
     "duration": 703
   },
   {
-    "name": "South Gully on Stob Bàn: Porridge edition",
+    "title": "South Gully on Stob Bàn: Porridge edition",
     "date": "2024-02-16",
     "category": "Mountains",
     "distance": 14.8,
@@ -69,7 +35,7 @@
     "duration": 495
   },
   {
-    "name": "Most of Jacobs Ladder, Stob Coire an t-Sneachda",
+    "title": "Most of Jacobs Ladder, Stob Coire an t-Sneachda",
     "date": "2024-02-13",
     "category": "Mountains",
     "distance": 18.7,
@@ -77,7 +43,7 @@
     "duration": 472
   },
   {
-    "name": "On the beach at Loch A'an, Cairngorm",
+    "title": "On the beach at Loch A'an, Cairngorm",
     "date": "2024-02-12",
     "category": "Mountains",
     "distance": 20,
@@ -85,7 +51,7 @@
     "duration": 495
   },
   {
-    "name": "La Sange Molle, au vent",
+    "title": "La Sange Molle, au vent",
     "date": "2024-02-01",
     "category": "Mountains",
     "distance": 22.4,
@@ -93,7 +59,7 @@
     "duration": 368
   },
   {
-    "name": "Col Busson again with Kat and Leo",
+    "title": "Col Busson again with Kat and Leo",
     "date": "2024-01-31",
     "category": "Mountains",
     "distance": 19.1,
@@ -101,16 +67,7 @@
     "duration": 348
   },
   {
-    "date": "2024-01-29",
-    "name": "Roche Motte in splendid isolation",
-    "link": "/posts/rochemottejan24",
-    "category": "Mountains",
-    "distance": 24.1,
-    "elevation": 1090,
-    "duration": 370
-  },
-  {
-    "name": "Approaching Col Perdu from the north east",
+    "title": "Approaching Col Perdu from the north east",
     "date": "2024-01-27",
     "category": "Mountains",
     "distance": 16.4,
@@ -118,7 +75,7 @@
     "duration": 294
   },
   {
-    "name": "Fressinières avec Christophe",
+    "title": "Fressinières avec Christophe",
     "date": "2024-01-25",
     "category": "Mountains",
     "distance": 11.7,
@@ -126,7 +83,7 @@
     "duration": 322
   },
   {
-    "name": "Confusion and collisions in la Combe de Laurichard",
+    "title": "Confusion and collisions in la Combe de Laurichard",
     "date": "2024-01-21",
     "category": "Mountains",
     "distance": 10.3,
@@ -134,7 +91,7 @@
     "duration": 374
   },
   {
-    "name": "Col Busson in the sunshine",
+    "title": "Col Busson in the sunshine",
     "date": "2024-01-19",
     "category": "Mountains",
     "distance": 20.2,
@@ -142,13 +99,7 @@
     "duration": 400
   },
   {
-    "date": "2024-01-14",
-    "name": "About",
-    "link": "/posts/about",
-    "category": "Metapost"
-  },
-  {
-    "name": "Stream crossings galore in the search for la Col du Lasseron",
+    "title": "Stream crossings galore in the search for la Col du Lasseron",
     "date": "2024-01-13",
     "category": "Mountains",
     "distance": 14.5,
@@ -156,7 +107,7 @@
     "duration": 437
   },
   {
-    "name": "Col de la Trancoulette; the story of the lost phone",
+    "title": "Col de la Trancoulette; the story of the lost phone",
     "date": "2024-01-12",
     "category": "Mountains",
     "distance": 17.8,
@@ -165,120 +116,110 @@
   },
   {
     "date": "2023-11-22",
-    "name": "Don't Use Dual Axis Charts: Hospital admissions data edition",
-    "external": "https://observablehq.com/d/d50025208d30df1e",
+    "title": "Don't Use Dual Axis Charts: Hospital admissions data edition",
+    "externalLink": "https://observablehq.com/d/d50025208d30df1e",
     "category": "Code"
   },
   {
+    "title": "Firsoff on Breadalbane",
     "quote": "This is a secluded, intimate mountain country, where the green of grass and the grey of rock blend with the gold of moss and the reddish blaeberry leaves. Rocks, ledges and sunny grassy hollows alternate with one another. One can play here hide-and-seek with the wind, lounge in some sheltered recess, look for mountain flowers, or feed on berries. I did none of these things, for I had the 5:40 train to catch at Crianlarich. My ascent was a breathless affair, with an eye on the watch. ",
     "attribution": "VA Firsoff (In the Hills of Breadalbane)",
     "date": "2023-10-10",
     "category": "Quotes"
   },
   {
-    "name": "Write music",
-    "link": "/posts/writemusic",
-    "date": "2023-09-26",
-    "category": "General"
-  },
-  {
-    "name": "Visualising feats of athleticism",
-    "link": "https://observablehq.com/d/b872682c267c809f",
+    "title": "Visualising feats of athleticism",
+    "externalLink": "https://observablehq.com/d/b872682c267c809f",
     "date": "2023-07-06",
     "category": "Code"
   },
   {
-    "name": "Easy Gully on Aonach Mor by drone",
+    "title": "Easy Gully on Aonach Mor by drone",
     "date": "2023-03-09",
     "category": "Mountains"
   },
   {
-    "name": "Easy Gully on Creag Meagaidh",
+    "title": "Easy Gully on Creag Meagaidh",
     "date": "2023-03-07",
     "category": "Mountains"
   },
   {
-    "name": "Laps of Chancers in the mist on Aonach Mor",
+    "title": "Laps of Chancers in the mist on Aonach Mor",
     "date": "2023-03-06",
     "category": "Mountains"
   },
   {
-    "name": "Winter skills with Alistair on Aonach Mor",
+    "title": "Winter skills with Alistair on Aonach Mor",
     "date": "2023-03-05",
     "category": "Mountains"
   },
   {
-    "name": "Number Four Gully on Ben Nevis",
+    "title": "Number Four Gully on Ben Nevis",
     "date": "2023-03-04",
     "category": "Mountains"
   },
   {
-    "name": "Char des Quays avec Richard",
+    "title": "Char des Quays avec Richard",
     "date": "2023-02-16",
     "category": "Mountains"
   },
   {
-    "name": "Fretes du Villy",
+    "title": "Fretes du Villy",
     "date": "2023-02-04",
     "category": "Mountains"
   },
   {
-    "name": "La Berthe, to the Swiss border with Ali",
+    "title": "La Berthe, to the Swiss border with Ali",
     "date": "2023-02-03",
     "category": "Mountains"
   },
   {
-    "name": "La Mole with Leo",
+    "title": "La Mole with Leo",
     "date": "2023-01-29",
     "category": "Mountains"
   },
   {
-    "name": "Pointe de la Croix",
+    "title": "Pointe de la Croix",
     "date": "2023-01-22",
     "category": "Mountains"
   },
   {
-    "name": "Col Ratti with Ben G and Pin",
+    "title": "Col Ratti with Ben G and Pin",
     "date": "2023-01-20",
     "category": "Mountains"
   },
   {
-    "name": "Col Ratti with no snow chains",
+    "title": "Col Ratti with no snow chains",
     "date": "2023-01-15",
     "category": "Mountains"
   },
   {
-    "name": "Ben McDui (nearly)",
+    "title": "Ben McDui (nearly)",
     "date": "2022-04-10",
     "category": "Mountains"
   },
   {
-    "name": "Creise in the rain",
+    "title": "Creise in the rain",
     "date": "2022-04-06",
     "category": "Mountains"
   },
   {
-    "name": "Uble",
+    "title": "Uble",
     "date": "2022-02-10",
     "category": "Mountains"
   },
   {
-    "name": "Col Ratti with Pin",
+    "title": "Col Ratti with Pin",
     "date": "2022-02-08",
     "category": "Mountains"
   },
   {
-    "name": "Col Ratti solo",
+    "title": "Col Ratti solo",
     "date": "2022-01-28",
     "category": "Mountains"
   },
   {
-    "name": "Muddy Road",
-    "link": "/posts/muddyroad",
-    "date": "2017-06-07",
-    "category": "General"
-  },
-  {
+    "title": "We can't handle salt",
     "quote": "Why don’t whales, that live in salt water and have salt water pass through their mouths, die of thirst? Why doesn’t the fresh water in a marine mammal’s body flow out into the salt water that surrounds it? The answer is that marine mammals and fish have a number of adaptations that allow them to conserve fresh water and excrete salt very effectively. It’s not the cod liver oil you want, it’s the cod’s liver. A liver that can filter the ocean must have other uses. If I had a cod’s liver I bet I could drink a keg of beer and piss turpentine. I could pour soy sauce in my miso soup and drink it with a spoon made of anchovies. Oh, to have the liver of a seal!",
     "attribution": "Gutbloom (Five ways humans were cheated by evolution)",
     "attributionLink": "https://medium.com/@gutbloom/five-ways-humans-were-cheated-by-evolution-5a6533e60906",
@@ -286,16 +227,11 @@
     "category": "Quotes"
   },
   {
+    "title": "Geniuses and lovers",
     "quote": "It is very painful, I think, to be told: ‘You enchanted the world for me, you made me feel things I never knew I could, now please be normal at dinner.’ We are always saying this to people in one way or another, of course; maybe we have to.",
     "attribution": "Annie Frankly (On geniuses and lovers)",
     "attributionLink": "https://medium.com/@annie_frankly/be-normal-at-dinner-on-geniuses-lovers-and-the-asks-we-make-of-both-ecbe29b02f35",
     "date": "2015-07-12",
     "category": "Quotes"
-  },
-  {
-    "name": "And then there was...",
-    "link": "/posts/andthentherewas",
-    "date": "2015-06-02",
-    "category": "General"
   }
 ]

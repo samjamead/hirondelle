@@ -1,11 +1,15 @@
 export interface PostWithBinaryDate {
   date: string;
   binaryDate: string;
-  name: string;
+  title: string;
+  slug?: string;
   link?: string;
   category: string;
   quote?: string;
-  external?: string;
+  externalLink?: string;
   attribution?: string;
   attributionLink?: string;
+  distance: number;
+  elevation: number;
+  duration: number;
 }

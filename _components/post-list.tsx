@@ -5,6 +5,23 @@ import { PostWithBinaryDate } from '@/_utils/types';
 import Link from 'next/link';
 import Quote from './quote';
 import { useSearchParams } from 'next/navigation';
+import * as d3 from 'd3';
+
+const MountainStats = ({ posts }: { posts: PostWithBinaryDate[] }) => {
+  const distance = d3.sum(posts, (p: PostWithBinaryDate) => p.distance);
+  const elevation = d3.sum(posts, (p: PostWithBinaryDate) => p.elevation);
+  const duration = d3.sum(posts, (p: PostWithBinaryDate) => p.duration);
+
+  const time = `${(duration - (duration % 60)) / 60}hr ${duration % 60}min`;
+
+  return (
+    <div className='flex justify-between items-center gap-4'>
+      <p>{d3.format(',.1f')(distance)}km</p>
+      <p>{d3.format(',.1f')(elevation)}m</p>
+      <p>{time}</p>
+    </div>
+  );
+};
 
 export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
   const searchParams = useSearchParams();
@@ -22,36 +39,45 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
 
   return (
     <div>
-      <p className='mb-16'>
-        {category && <span>{category}: </span>}
-        {postList.length} posts
-      </p>
+      <div className='flex justify-between items-center gap-8'>
+        <p className='mb-16'>
+          {category && <span>{category}: </span>}
+          {postList.length} posts
+        </p>
+        {category && category === 'Mountains' && (
+          <MountainStats posts={postList} />
+        )}
+      </div>
+
       <ul className='flex flex-col gap-8'>
         {postList.map((post) => {
           return (
             <li
-              key={post.binaryDate}
+              key={post.title}
               className='animate-in flex justify-start items-baseline gap-8'
             >
-              {post.link && (
+              {post.slug && (
                 // Most posts
 
-                <Link href={post.link} className='underline'>
-                  {post.name}
+                <Link href={`/${post.slug}`} className='underline'>
+                  {post.title}
                 </Link>
               )}
 
-              {post.name &&
-                !post.external &&
-                !post.link &&
+              {post.title &&
+                !post.slug &&
                 // Coming soon posts
 
-                post.name}
+                post.title}
 
-              {post.external && (
+              {post.externalLink && (
                 // Links to external posts, most frequently Observable
-                <a href={post.external} target='_blank' className='underline'>
-                  {post.name}
+                <a
+                  href={post.externalLink}
+                  target='_blank'
+                  className='underline'
+                >
+                  {post.title}
                 </a>
               )}
 
