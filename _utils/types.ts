@@ -12,4 +12,5 @@ export interface PostWithBinaryDate {
   distance: number;
   elevation: number;
   duration: number;
+  mountains?: string[];
 }

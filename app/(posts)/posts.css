@@ -1,0 +1,15 @@
+h2 {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+p {
+  max-width: 65ch;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: underline;
+}

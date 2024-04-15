@@ -5,23 +5,7 @@ import { PostWithBinaryDate } from '@/_utils/types';
 import Link from 'next/link';
 import Quote from './quote';
 import { useSearchParams } from 'next/navigation';
-import * as d3 from 'd3';
-
-const MountainStats = ({ posts }: { posts: PostWithBinaryDate[] }) => {
-  const distance = d3.sum(posts, (p: PostWithBinaryDate) => p.distance);
-  const elevation = d3.sum(posts, (p: PostWithBinaryDate) => p.elevation);
-  const duration = d3.sum(posts, (p: PostWithBinaryDate) => p.duration);
-
-  const time = `${(duration - (duration % 60)) / 60}hr ${duration % 60}min`;
-
-  return (
-    <div className='flex justify-between items-center gap-4'>
-      <p>{d3.format(',.1f')(distance)}km</p>
-      <p>{d3.format(',.1f')(elevation)}m</p>
-      <p>{time}</p>
-    </div>
-  );
-};
+import MountainStats from '@/_components/mountain-stats';
 
 export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
   const searchParams = useSearchParams();
@@ -39,8 +23,8 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
 
   return (
     <div>
-      <div className='flex justify-between items-center gap-8'>
-        <p className='mb-16'>
+      <div className='mb-16 flex justify-between items-center gap-8'>
+        <p>
           {category && <span>{category}: </span>}
           {postList.length} posts
         </p>
@@ -64,12 +48,6 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
                 </Link>
               )}
 
-              {post.title &&
-                !post.slug &&
-                // Coming soon posts
-
-                post.title}
-
               {post.externalLink && (
                 // Links to external posts, most frequently Observable
                 <a
@@ -89,6 +67,14 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
                   attributionLink={post.attributionLink}
                 />
               )}
+
+              {post.title &&
+                !post.slug &&
+                !post.externalLink &&
+                !post.quote &&
+                // Coming soon posts
+
+                post.title}
 
               <div className='grow'>
                 <hr className='border-t-white/10' />

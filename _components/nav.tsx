@@ -33,16 +33,16 @@ export default function Nav() {
 
   return (
     <nav>
-      <ul className='flex justify-between items-center gap-6'>
+      <ul className='flex justify-between items-center gap-4'>
         {menuItems.map(({ name, link }) => {
           return (
             <li key={name}>
               <Link
                 href={link}
-                className={`text-sm ${
+                className={`text-sm px-2 py-1 rounded ${
                   category && link.includes(category)
-                    ? 'text-white font-normal'
-                    : 'text-foreground/80 hover:text-white hover:underline'
+                    ? 'text-white font-normal bg-purple-500/30'
+                    : 'text-foreground/80 hover:text-white hover:bg-purple-500/20'
                 }  transition-all`}
               >
                 {name}

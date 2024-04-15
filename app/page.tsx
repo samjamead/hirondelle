@@ -1,11 +1,20 @@
 import { fetchPosts } from '@/_utils/fetchPosts';
 import { dateStringToBinary } from '@/_utils/helpers';
 import PostList from '@/_components/post-list';
+import extraPosts from '@/_data/posts.json';
+
+export const metadata = {
+  title: 'Hirondelle',
+};
 
 export default async function Home() {
   const posts = await fetchPosts();
 
-  const parsedPosts = posts.map((post) => {
+  const allPosts = [...extraPosts, ...posts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
+  const parsedPosts = allPosts.map((post) => {
     const binaryDate = dateStringToBinary(post.date);
     return {
       ...post,

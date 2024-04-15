@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import './posts.css';
 
 export default function RootLayout({
   children,
@@ -6,8 +7,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className='w-full min-h-40 p-8 rounded border border-yellow-400'>
-      <article>{children}</article>
+    <div className='w-full'>
+      <article className='pt-12 pb-24'>{children}</article>
       <hr className='my-8 border-t border-foreground/20' />
       <div>
         <p>

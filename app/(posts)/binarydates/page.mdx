@@ -1,12 +1,26 @@
 export const metadata = {
   title: 'Binary Dates',
   date: '2024-04-04',
+  category: 'Code',
 };
 
-export default function Page() {
-  return (
-    <div className='py-12'>
-      <p>Why not! I think they&apos;re fun</p>
-    </div>
-  );
-}
+import PostHero from '@/_components/post-hero';
+import BinaryConversionInput from '@/_components/binary-conversion-input';
+
+<PostHero metadata={metadata} />
+
+I swapped all the post dates to 8-bit binary. Why not! I think they&apos;re
+fun.
+
+Have a go:
+
+<BinaryConversionInput />
+
+## What the heck is 8-bit binary?!
+
+You're probably familiar with binary being a series of zeros and ones, that
+when mashed together can mean other numbers (or letters or symbols).
+
+Binary is the base-2 numeral system, ultimately what the computer turns
+everything into in order to 'run' it, and if it was good enough to power the
+Apollo moon missions then it's good enough for dates on a blog.
