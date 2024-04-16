@@ -33,7 +33,7 @@ export default function Nav() {
 
   return (
     <nav>
-      <ul className='flex justify-between items-center gap-4'>
+      <ul className='flex flex-col lg:flex-row justify-between items-end lg:items-center gap-4'>
         {menuItems.map(({ name, link }) => {
           return (
             <li key={name}>

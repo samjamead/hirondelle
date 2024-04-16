@@ -33,12 +33,12 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
         )}
       </div>
 
-      <ul className='flex flex-col gap-8'>
+      <ul className='flex flex-col gap-12 lg:gap-8'>
         {postList.map((post) => {
           return (
             <li
               key={post.title}
-              className='animate-in flex justify-start items-baseline gap-8'
+              className='animate-in flex flex-col-reverse lg:flex-row justify-start items-baseline gap-2 lg:gap-8'
             >
               {post.slug && (
                 // Most posts

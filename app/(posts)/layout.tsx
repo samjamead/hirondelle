@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import './posts.css';
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -12,7 +12,6 @@ export default function RootLayout({
       <hr className='my-8 border-t border-foreground/20' />
       <div>
         <p>
-          &larr;{' '}
           <Link href='/' className='text-sm hover:underline'>
             Back
           </Link>
