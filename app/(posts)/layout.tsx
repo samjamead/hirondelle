@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className='w-full'>
-      <article className='pt-12 pb-24'>{children}</article>
+      <article className='pt-16 pb-24'>{children}</article>
       <hr className='my-8 border-t border-foreground/20' />
       <div>
         <p>

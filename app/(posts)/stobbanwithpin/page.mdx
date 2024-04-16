@@ -8,14 +8,46 @@ export const metadata = {
   mountains: ['Stob Bàn'],
 };
 
+import PostHero from '@/_components/post-hero';
+import { ArrowRightCircle, ArrowUpCircle, Clock12 } from 'lucide-react';
+
+<PostHero metadata={metadata} />
+
+<div className='mb-8 flex items-center gap-8'>
+  <p className='flex items-center gap-2'>
+    <ArrowRightCircle size={24} strokeWidth={1.5} />{' '}
+    <span>{metadata.distance}km</span>
+  </p>
+  <p className='flex items-center gap-2'>
+    <ArrowUpCircle size={24} strokeWidth={1.5} />{' '}
+    <span>{metadata.distance}m</span>
+  </p>
+  <p className='flex items-center gap-2'>
+    <Clock12 size={24} strokeWidth={1.5} /> <span>6hrs 55mins</span>
+  </p>
+</div>
+
 <img
-  src='/img/stobbanwithpin/IMG_5801.jpeg'
-  alt='Pin on the North Ridge of Stob Bàn'
-  className='max-w-sm rounded-md mb-8'
+  src='/img/stobbanwithpin/IMG_5760.jpeg'
+  alt='Pin on the east ridge of Stob Bàn'
+  className='mb-8 max-w-full rounded-md'
 />
 
-![Pin on the North Ridge of Stob Bàn](/img/stobbanwithpin/IMG_5801.jpeg)
+<div className='mb-8 flex w-full gap-8'>
+  <img
+    src='/img/stobbanwithpin/IMG_5792.jpeg'
+    alt='On the summit!'
+    className='shrink grow w-0 basis-1/2 rounded-md'
+  />
+  <img
+    src='/img/stobbanwithpin/IMG_5801.jpeg'
+    alt='Pin on the north ridge of Stob Bàn'
+    className='shrink grow w-0 basis-1/2 rounded-md'
+  />
+</div>
 
-<p>&rarr; 13.6km</p>
-<p>&uarr; 963m</p>
-<p>&circ; 6hr55mins</p>
+<img
+  src='/img/stobbanwithpin/IMG_5805.jpeg'
+  alt='Scrambling home'
+  className='max-w-full rounded-md'
+/>

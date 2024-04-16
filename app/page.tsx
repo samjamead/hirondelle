@@ -24,7 +24,7 @@ export default async function Home() {
 
   return (
     <div className='w-full'>
-      <div className='max-w-6xl mx-auto pt-12 flex flex-col gap-8'>
+      <div className='max-w-6xl mx-auto flex flex-col gap-8'>
         {posts && <PostList posts={parsedPosts} />}
       </div>
     </div>
