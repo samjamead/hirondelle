@@ -23,7 +23,7 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
 
   return (
     <div>
-      <div className='my-16 flex justify-between items-center gap-8'>
+      <div className='my-16 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8'>
         <p>
           {category && <span>{category}: </span>}
           {postList.length} posts
