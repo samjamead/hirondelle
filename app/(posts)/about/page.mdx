@@ -1,10 +1,11 @@
 export const metadata = {
-  date: '2024-01-14',
+  date: '2024-01-02',
   title: 'About',
   category: 'Metapost',
 };
 
 import PostHero from '@/_components/post-hero';
+import MetapostFooter from '@/_components/metapost-footer';
 
 <PostHero metadata={metadata} />
 
@@ -12,7 +13,4 @@ There is no about page, but here's the about post.
 
 This is a blog about days spent in the mountains and data visualised with code. There are some other odds and ends sprinkled in for good measure.
 
-Other <span className='text-sm px-2 py-1 rounded bg-purple-500/30'> metaposts</span>:
-
-- [Freelance](/freelance)
-- [Contact](/contact)
+<MetapostFooter currentPage='About' />

@@ -9,23 +9,13 @@ export const metadata = {
 };
 
 import PostHero from '@/_components/post-hero';
-import { ArrowRightCircle, ArrowUpCircle, Clock12 } from 'lucide-react';
+import MountainPostStats from '@/_components/mountain-post-stats';
 
 <PostHero metadata={metadata} />
 
-<div className='mb-8 flex items-center gap-8'>
-  <p className='flex items-center gap-2'>
-    <ArrowRightCircle size={24} strokeWidth={1.5} />{' '}
-    <span>{metadata.distance}km</span>
-  </p>
-  <p className='flex items-center gap-2'>
-    <ArrowUpCircle size={24} strokeWidth={1.5} />{' '}
-    <span>{metadata.distance}m</span>
-  </p>
-  <p className='flex items-center gap-2'>
-    <Clock12 size={24} strokeWidth={1.5} /> <span>6hrs 55mins</span>
-  </p>
-</div>
+<MountainPostStats metadata={metadata} />
+
+The best day out of winter 23/24, traversing Stob Bàn. Up from Glen Nevis between Stob Bàn and Sgurr a Mhaim, and then to the summit via the east ridge. Down via the north / north east ridge.
 
 <img
   src='/img/stobbanwithpin/IMG_5760.jpeg'
@@ -33,16 +23,16 @@ import { ArrowRightCircle, ArrowUpCircle, Clock12 } from 'lucide-react';
   className='mb-8 max-w-full rounded-md'
 />
 
-<div className='mb-8 flex w-full gap-8'>
+<div className='w-full mb-8 flex flex-wrap lg:flex-nowrap gap-8'>
   <img
     src='/img/stobbanwithpin/IMG_5792.jpeg'
     alt='On the summit!'
-    className='shrink grow w-0 basis-1/2 rounded-md'
+    className='shrink grow w-0 basis-full lg:basis-1/2 rounded-md'
   />
   <img
     src='/img/stobbanwithpin/IMG_5801.jpeg'
     alt='Pin on the north ridge of Stob Bàn'
-    className='shrink grow w-0 basis-1/2 rounded-md'
+    className='shrink grow w-0 basis-full lg:basis-1/2 rounded-md'
   />
 </div>
 

@@ -4,7 +4,7 @@ h2 {
   font-weight: 500;
 }
 
-p {
+article > p {
   max-width: 65ch;
   margin-bottom: 1rem;
   line-height: 1.8;

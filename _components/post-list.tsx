@@ -96,7 +96,7 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
                 >
                   {binaryDates
                     ? post.binaryDate
-                    : d3.timeFormat('%a %d %b %y')(new Date(post.date))}
+                    : d3.timeFormat('%a %d %b %Y')(new Date(post.date))}
                 </button>
               </span>
             </li>
