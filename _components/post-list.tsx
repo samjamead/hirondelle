@@ -6,9 +6,13 @@ import Link from 'next/link';
 import Quote from './quote';
 import { useSearchParams } from 'next/navigation';
 import MountainStats from '@/_components/mountain-stats';
+import { ArrowUpRight } from 'lucide-react';
+import * as d3 from 'd3';
 
 export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
   const searchParams = useSearchParams();
+
+  const [binaryDates, setBinaryDates] = useState<boolean>(true);
 
   const category = searchParams.get('category');
 
@@ -50,13 +54,18 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
 
               {post.externalLink && (
                 // Links to external posts, most frequently Observable
-                <a
-                  href={post.externalLink}
-                  target='_blank'
-                  className='underline'
-                >
-                  {post.title}
-                </a>
+                <div className='flex'>
+                  <a
+                    href={post.externalLink}
+                    target='_blank'
+                    className='underline'
+                  >
+                    {post.title}
+                  </a>
+                  <span className='pl-1'>
+                    <ArrowUpRight size={12} strokeWidth={1.5} />
+                  </span>
+                </div>
               )}
 
               {post.quote && post.attribution && (
@@ -81,7 +90,14 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
               </div>
 
               <span className='shrink font-mono text-xs text-white/70'>
-                {post.binaryDate}
+                <button
+                  role='button'
+                  onClick={() => setBinaryDates(!binaryDates)}
+                >
+                  {binaryDates
+                    ? post.binaryDate
+                    : d3.timeFormat('%a %d %b %y')(new Date(post.date))}
+                </button>
               </span>
             </li>
           );
