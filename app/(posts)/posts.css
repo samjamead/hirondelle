@@ -4,12 +4,23 @@ h2 {
   font-weight: 500;
 }
 
-article > p {
+article > p,
+article > ul,
+article > ol {
   max-width: 65ch;
   margin-bottom: 1rem;
   line-height: 1.8;
 }
 
-article > p > a {
+article > a,
+article > p > a,
+article > ol > li > a,
+article > ul > li > a {
   text-decoration: underline;
+}
+
+article > ul > li {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  list-style: disc;
 }
