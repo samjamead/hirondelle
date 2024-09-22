@@ -13,9 +13,9 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.0",
     "@types/mdx": "^2.0.13",
+    "autoprefixer": "10.4.17",
     "d3": "^7.9.0",
     "lucide-react": "^0.365.0",
-    "autoprefixer": "10.4.17",
     "next": "latest",
     "postcss": "8.4.33",
     "react": "18.2.0",
@@ -30,6 +30,8 @@
     "@types/react-dom": "18.2.18",
     "encoding": "^0.1.13",
     "eslint": "^8",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.3.3"
   }
 }
