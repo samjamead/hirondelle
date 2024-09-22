@@ -11,7 +11,7 @@ export default async function Home() {
   const posts = await fetchPosts();
 
   const allPosts = [...extraPosts, ...posts].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
   const parsedPosts = allPosts.map((post) => {
