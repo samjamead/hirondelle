@@ -1,0 +1,24 @@
+export const metadata = {
+  title: 'Franz Kafka',
+  date: '2024-09-28',
+};
+
+export default function Page() {
+  return (
+    <div className='py-12 max-w-prose flex flex-col gap-4'>
+      <p>
+        Franz Kafka. People are always wanging on about him. I suspect I'll
+        never truely appraise the poetry of his work for myself; it's unlikely
+        I'll ever learn German or Czech well enough to read it.
+      </p>
+      <blockquote className='pl-4 border-l-4 flex flex-col gap-4'>
+        <p>
+          Dearest, with this better stationary let us also start a better life
+        </p>
+        <span className='text-sm text-foreground/80'>
+          &mdash;Franz Kafka (maybe)
+        </span>
+      </blockquote>
+    </div>
+  );
+}

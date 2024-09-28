@@ -23,7 +23,7 @@ export default function Quote({
       <p className='leading-7 mb-1 font-light'>
         {quote.slice(0, isOpen ? quote.length : 150)}
 
-        {!isOpen && (
+        {!isOpen && quote.length > 149 && (
           <button
             className='inline-block ml-1 p-1 leading-[6px] align-middle text-xs bg-gray-600 rounded'
             onClick={toggleOpen}
