@@ -9,30 +9,16 @@ export const metadata = {
 };
 
 import PostHero from '@/_components/post-hero';
-import { ArrowRightCircle, ArrowUpCircle, Clock12 } from 'lucide-react';
-
-export const durationString = `${
-  (metadata.duration - (metadata.duration % 60)) / 60
-}hrs ${metadata.duration % 60}mins`;
+import MountainPostStats from '@/_components/mountain-post-stats';
 
 <PostHero metadata={metadata} />
 
-<div className='mb-8 flex items-center gap-8'>
-  <p className='flex items-center gap-2'>
-    <ArrowRightCircle size={24} strokeWidth={1.5} />{' '}
-    <span>{metadata.distance}km</span>
-  </p>
-  <p className='flex items-center gap-2'>
-    <ArrowUpCircle size={24} strokeWidth={1.5} />{' '}
-    <span>{metadata.distance}m</span>
-  </p>
-  <p className='flex items-center gap-2'>
-    <Clock12 size={24} strokeWidth={1.5} /> <span>{durationString}</span>
-  </p>
-</div>
+<MountainPostStats metadata={metadata} />
+
+Get up early, take the climbers' gondola. Push hard for an hour, and then another half an hour. Realise you're ahead of Naismith's Rule. Keep pushing, past the summit of Aonach Mor, and down to the col. Look back at The Ben; wow.
 
 <img
   src='/img/aonachbeagfeb24/IMG_5648.jpeg'
   alt='The Ben'
-  className='max-w-full rounded-md'
+  className='max-w-full rounded-mdmb-8'
 />
