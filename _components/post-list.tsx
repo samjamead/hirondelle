@@ -20,16 +20,16 @@ export default function PostList({ posts }: { posts: PostWithBinaryDate[] }) {
 
   useEffect(() => {
     const filteredPosts = posts.filter((post) =>
-      category ? post.category === category : post
+      category ? post.category === category : post,
     );
     setPostList(filteredPosts);
   }, [category, posts]);
 
   return (
     <div>
-      <div className='my-16 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8'>
+      <div className='pb-16 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8'>
         <p>
-          {category && <span>{category}: </span>}
+          {category ? <span>{category}: </span> : 'A total of '}
           {postList.length} posts
         </p>
         {category && category === 'Mountains' && (

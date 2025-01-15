@@ -13,6 +13,11 @@ const config: Config = {
         foreground: 'hsl(var(--foreground))',
         'card-bg': 'hsl(var(--card-bg))',
       },
+      fontFamily: {
+        merriweather: ['var(--font-merriweather)'],
+        inter: ['var(--font-inter)'],
+        jetBrainsMono: ['var(--font-jetBrainsMono)'],
+      },
     },
   },
   plugins: [],
