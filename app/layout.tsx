@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/_components/header';
 import Footer from '@/_components/footer';
@@ -7,6 +7,7 @@ import { Suspense } from 'react';
 import Loading from './loading';
 
 const inter = Inter({ subsets: ['latin'] });
+const jetBrainsMono = JetBrains_Mono({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Hirondelle',
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} w-full min-h-screen px-4 font-light flex flex-col justify-start`}
+        className={`${inter.className} ${jetBrainsMono.className} w-full min-h-screen px-4 font-light flex flex-col justify-start`}
       >
         <Suspense fallback={<Loading />}>
           <Header />
