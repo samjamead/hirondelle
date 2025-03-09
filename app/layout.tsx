@@ -1,12 +1,16 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Inconsolata } from 'next/font/google';
 import './globals.css';
-import Header from '@/_components/header';
-import Footer from '@/_components/footer';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 import { Suspense } from 'react';
 import Loading from './loading';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const inconsolata = Inconsolata({
+  subsets: ['latin'],
+  variable: '--font-inconsolata',
+});
 
 export const metadata: Metadata = {
   title: 'Hirondelle',
@@ -21,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} w-full min-h-screen px-4 font-light flex flex-col justify-start`}
+        className={`${inter.variable} ${inconsolata.variable} w-full min-h-screen px-4 font-light flex flex-col justify-start`}
       >
         <Suspense fallback={<Loading />}>
           <Header />

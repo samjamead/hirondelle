@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import { PostWithBinaryDate } from '@/_utils/types';
+import { PostWithBinaryDate } from '@/utils/types';
 
 const MountainStats = ({ posts }: { posts: PostWithBinaryDate[] }) => {
   const distance = d3.sum(posts, (p: PostWithBinaryDate) => p.distance);

@@ -1,7 +1,8 @@
-import { fetchPosts } from '@/_utils/fetchPosts';
-import { dateStringToBinary } from '@/_utils/helpers';
-import PostList from '@/_components/post-list';
-import extraPosts from '@/_data/posts.json';
+import { fetchPosts } from '@/utils/fetchPosts';
+import { dateStringToBinary } from '@/utils/helpers';
+import PostList from '@/components/post-list';
+import extraPosts from '@/data/posts.json';
+import PageHero from '@/components/page-hero';
 
 export const metadata = {
   title: 'Hirondelle',
@@ -24,7 +25,13 @@ export default async function Home() {
 
   return (
     <div className='w-full'>
-      <div className='max-w-6xl mx-auto flex flex-col gap-8'>
+      <div className='max-w-6xl mx-auto'>
+        <PageHero>
+          <h2 className='text-lg max-w-2xl text-balance font-inconsolata'>
+            A list of posts, notes, and other things written or accumulated by
+            Sam Mead.
+          </h2>
+        </PageHero>
         {posts && <PostList posts={parsedPosts} />}
       </div>
     </div>

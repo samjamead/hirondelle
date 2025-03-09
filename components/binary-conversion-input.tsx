@@ -1,5 +1,5 @@
 'use client';
-import { dateStringToBinary } from '@/_utils/helpers';
+import { dateStringToBinary } from '@/utils/helpers';
 import { useState } from 'react';
 import { ChevronsRight } from 'lucide-react';
 
