@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import './posts.css';
 
 export default function Layout({

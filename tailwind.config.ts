@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss';
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './_components/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -14,9 +14,8 @@ const config: Config = {
         'card-bg': 'hsl(var(--card-bg))',
       },
       fontFamily: {
-        merriweather: ['var(--font-merriweather)'],
+        inconsolata: ['var(--font-inconsolata)'],
         inter: ['var(--font-inter)'],
-        jetBrainsMono: ['var(--font-jetBrainsMono)'],
       },
     },
   },

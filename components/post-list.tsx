@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { PostWithBinaryDate } from '@/_utils/types';
+import { PostWithBinaryDate } from '@/utils/types';
 import Link from 'next/link';
 import Quote from './quote';
 import { useSearchParams } from 'next/navigation';
-import MountainStats from '@/_components/mountain-stats';
+import MountainStats from '@/components/mountain-stats';
 import { ArrowUpRight } from 'lucide-react';
 import * as d3 from 'd3';
 
